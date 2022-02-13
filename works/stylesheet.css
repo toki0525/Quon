@@ -1,0 +1,657 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #302B27;
+}
+
+body{
+    width: 100%;
+    font-family: "Sawarabi Mincho";
+    background: #FFFFFF;
+}
+
+.english{
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: #c4e1f5;
+}
+
+nav a{
+    color: #302B27;
+    text-decoration: none;
+    color: #b95757;
+}
+
+main{
+    padding-top: 20px;
+}
+
+.content h2{
+    text-align: center;
+    background-color: #ffe0d7;
+    color: #b95757;
+}
+
+.window{
+    background-color: #ffe0d7;
+}
+
+.sentence{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.contents h2{
+    text-align: center;
+    background-color: #ffe0d7;
+    color: #b95757;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#popup{
+    background: #ffe0d7;
+}
+
+label{
+    display:block;
+}
+
+label span:hover{
+    cursor:pointer;
+    opacity: 0.75;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+    display:block;
+    transition:.2s;
+}
+
+.close{
+    cursor:pointer;
+}
+
+.one{
+    background-color: #ffe0d7;
+}
+
+.second{
+    background-color: #ffe0d7;
+}
+
+.picture{
+    text-align: center;
+}
+
+.comingsoon{
+    background-color: #ffe0d7;
+}
+
+.moviecoming{
+    text-align: center;
+    background-color: #ffffff;
+}
+
+footer{
+    font-family: "Sawarabi Mincho";
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/*パソコン*/
+@media screen and (min-width: 1025px){
+    h1{
+        font-size: 42px;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    h4{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    nav a{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .contents{
+        margin-top: 8%;
+    }
+    
+    .contents h2{
+        padding: 30px;
+    }
+    
+    .box{
+        margin: 20px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 32%;
+        margin-top: 8%; 
+    }
+    
+    .text{
+        padding: 40px;
+    }
+    
+    #popup{
+        padding:0 4%;
+        box-sizing:border-box;
+        display:none;
+        position:fixed;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+    }
+    
+    label span{
+        display:block;
+        line-height:40px;
+        border-radius:4px;
+        text-align:center;
+    }
+    
+    .close{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    .picture{
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .coming{
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .content h4{
+        margin-top: 15px;
+    }
+    
+    img{
+        margin: 10px;
+    }
+    
+    .text{
+        padding-bottom: 10px;
+    }
+    
+    .moviecoming img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+    }
+    
+     .pc-display{
+        display: block;
+    }
+    
+    .pm-display{
+        display: none;
+    }
+    
+}
+
+/*Laptop*/
+@media screen  and (min-width: 769px) and (max-width: 1024px){
+    h1{
+        font-size: 42px;
+    }
+    
+    h2{
+        font-size: 40px;
+        padding: 20px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    h4{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    nav a{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .first{
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    
+    .content{
+        margin: 0 auto;
+        width: 57%;
+        margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 30px;
+    }
+    
+    .box{
+        margin: 20px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 32%;
+        margin-top: 8%; 
+    }
+    
+    .text{
+        padding: 40px;
+    }
+    
+    #popup{
+        padding:0 4%;
+        box-sizing:border-box;
+        display:none;
+        position:fixed;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+    }
+    
+    label span{
+        display:block;
+        line-height:40px;
+        border-radius:4px;
+        text-align:center;
+    }
+    
+    .close{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    .picture{
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .coming{
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .content h4{
+        margin-top: 15px;
+    }
+    
+    img{
+        margin: 10px;
+    }
+    
+    .text{
+        padding-bottom: 10px;
+    }
+    
+    .moviecoming img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+    }
+    
+    .pc-display{
+        display: block;
+    }
+    
+    .pm-display{
+        display: none;
+    }
+    
+}
+
+/*タブレット*/
+@media screen  and (min-width: 481px) and (max-width: 768px){
+    h1{
+        font-size: 37px;
+    }
+    
+    h2{
+        font-size: 35px;
+        padding: 7px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+    
+    h4{
+        font-size: 15px;
+    }
+    
+    p{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    nav a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .first{
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 60%;
+         margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 30px;
+    }
+    
+    
+    .box{
+        margin: 20px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 32%;
+        margin-top: 8%; 
+    }
+    
+    .text{
+        padding: 40px;
+    }
+    
+    #popup{
+        padding:0 4%;
+        box-sizing:border-box;
+        display:none;
+        position:fixed;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+    }
+    
+    label span{
+        display:block;
+        line-height:40px;
+        border-radius:4px;
+        text-align:center;
+    }
+    
+    .close{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    .picture{
+        width: 90%;
+        height: 90%;
+        margin: 10px;
+    }
+    
+    .coming{
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .content h4{
+        margin-top: 15px;
+    }
+    
+    img{
+        margin: 10px;
+    }
+    
+    .text{
+        padding-bottom: 10px;
+    }
+    
+    .moviecoming img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+    }
+    
+    .pc-display{
+        display: none;
+    }
+    
+    .pm-display{
+        display: block;
+    }
+
+}
+
+/*スマホ*/
+@media screen  and (min-width: 1px) and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 22px;
+    }
+    
+    h2{
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+    
+    h4{
+        font-size: 10px;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    
+    nav a{
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    nav ul{
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    main{
+        padding-top: 40px;
+    }
+    
+    .first{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 72%;
+        margin-top: 3%;
+    }
+
+    .content h2{
+        padding: 8px;
+    }
+    
+     .box{
+        margin: 10px;
+    }
+    
+     .content{
+        margin: 0 auto;
+        width: 32%;
+        margin-top: 8%; 
+    }
+    
+    .text{
+        padding: 4s0px;
+    }
+    
+    #popup{
+        padding:0 4%;
+        box-sizing:border-box;
+        display:none;
+        position:fixed;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 30%;
+    }
+    
+    label span{
+        display:block;
+        line-height:40px;
+        border-radius:4px;
+        text-align:center;
+    }
+    
+    .close{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    .picture{
+        width: 90%;
+        height: 90%;
+        margin: 5px;
+    }
+    
+    .coming{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        padding-top: 12px;
+    }
+    
+    .content h4{
+        margin-top: 15px;
+    }
+    
+    img{
+        margin: 10px;
+    }
+    
+    .text{
+        padding-bottom: 10px;
+    }
+    
+    .moviecoming img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+    }
+    
+    .pc-display{
+        display: none;
+    }
+    
+    .pm-display{
+        display: block;
+    }
+    
+    footer{
+        margin: 5px;
+    }
+}
