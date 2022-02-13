@@ -1,0 +1,47 @@
+/*スライダー実装とデザイン*/
+#wrap{
+    background-color: #FFFFFF;
+    padding: 50px 0px;
+}
+    
+#slider{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapping img{
+    width: 80%;
+    text-align: center;
+}
+
+.slider-item{
+    margin: 0 auto;
+}
+    
+.slide-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.prev-arrow{
+    background-color: #FFFFFF;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #b95757;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.next-arrow{
+    background-color: #FFFFFF;
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #b95757;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}

@@ -1,0 +1,448 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #302B27;
+}
+
+body{
+    width: 100%;
+    font-family: "Sawarabi Mincho";
+    background: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.english{
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: #c4e1f5;
+}
+
+nav a{
+    color: #302B27;
+    text-decoration: none;
+    color: #b95757;
+}
+
+main{
+    padding-top: 50px;
+}
+
+.content h2{
+    text-align: center;
+    background-color: #ffe0d7;
+    color: #b95757;
+}
+
+.under{
+    border-bottom: dotted 3px #b95757;
+}
+
+.blue{
+    color: #c4e1f5;
+}
+
+footer{
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/*パソコン*/
+@media screen and (min-width: 1025px){
+    h2{
+        font-size: 40px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    h4{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    nav a{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 30px;
+    }
+    
+    .info{
+        margin: 5% auto;
+        width: 57%;
+    }
+    
+    .person{
+        margin-top: 90px;
+    }
+    
+    .text-box{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .text-box p{
+        margin-bottom: 10px;
+    }
+    
+    .wrap{
+        margin: 3% auto;
+        width: 65%;
+    }
+
+    .person{
+        display: flex;
+    }
+
+    .person:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .second img{
+        width: 30%;
+    }
+
+    .person{
+        margin: 20px;
+    }
+
+    .person img{
+        margin-left: 20px;
+    }
+    
+    .fab{
+        margin-right: 15px;
+    }
+    
+    .pc-display{
+        display: block;
+    }
+    
+    .pm-display{
+        display: none;
+    }
+    
+}
+
+/*Laptop*/
+@media screen  and (min-width: 769px) and (max-width: 1024px){
+    h2{
+        font-size: 40px;
+    }
+    
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    h4{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    
+    nav a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 20px;
+    }
+    
+    .info{
+        margin: 5% auto;
+        width: 79%;
+    }
+    
+    .text-box{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .text-box p{
+        margin-bottom: 5px;
+    }
+    
+    .wrap{
+        margin: 3% auto;
+        width:90%;
+    }
+
+    .person{
+        display: flex;
+    }
+
+    .person:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .second img{
+        width: 25%;
+    }
+
+    .person{
+        margin: 20px;
+        margin-top: 90px;
+    }
+
+    .person img{
+        margin-left: 20px;
+    }
+    
+    .fab{
+        margin-right: 15px;
+    }
+    
+    .pc-display{
+        display: block;
+    }
+    
+    .pm-display{
+        display: none;
+    }
+    
+}
+
+/*タブレット*/
+@media screen  and (min-width: 481px) and (max-width: 768px){
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    h4{
+        font-size: 23px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+    
+    nav a{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .content{
+        margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 15px;
+    }
+    
+    .info{
+        margin: 5% auto;
+        width: 78%;
+    }
+    
+    .text-box{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .text-box p{
+        margin-bottom: 5px;
+    }
+    
+    .wrap{
+        margin: 3% auto;
+        width:95%;
+    }
+
+    .person{
+        display: flex;
+    }
+
+    .person:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .second img{
+        width: 40%;
+    }
+
+    .person{
+        margin: 20px;
+        margin-top: 90px;
+    }
+
+    .person img{
+        margin-left: 20px;
+    }
+    
+    .fab{
+        margin-right: 10px;
+    }
+    
+    .pc-display{
+        display: block;
+    }
+    
+    .pm-display{
+        display: none;
+    }
+
+}
+
+/*スマホ*/
+@media screen  and (min-width: 1px) and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    
+    h4{
+        font-size: 13px;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    
+    nav a{
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    nav ul{
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+    
+    main{
+        padding-top: 40px;
+    }   
+    
+    .content{
+        margin-top: 8%;
+    }
+    
+    .content h2{
+        padding: 8px;
+    }
+    
+     .info{
+        margin: 5% auto;
+        width: 78%;
+    }
+    
+    .text-box{
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .text-box p{
+        margin-bottom: 5px;
+    }
+    
+    .wrap{
+        margin: 3% auto;
+        width: 99%;
+    }
+
+    .person{
+        display: flex;
+    }
+
+    .person:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .second img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .person{
+        margin: 5px;
+        margin-top: 40px;
+    }
+
+    .two img{
+        margin-left: 5px;
+    }
+    
+    .fab{
+        margin-right: 5px;
+    }
+    
+    .pc-display{
+        display: none;
+    }
+    
+    .pm-display{
+        display: block;
+    }
+    
+    footer{
+        font-size: 10px;
+    }
+}

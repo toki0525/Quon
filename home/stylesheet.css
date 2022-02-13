@@ -1,0 +1,485 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #302B27;
+}
+
+body{
+    width: 100%;
+    font-family: "Sawarabi Mincho";
+    background: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.english{
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: #c4e1f5;
+}
+
+nav a{
+    color: #302B27;
+    text-decoration: none;
+    color: #b95757;
+}
+
+main{
+    padding-top: 130px;
+}
+
+#newsevent{
+    height: 120px;/*スクロールの高さ*/
+	overflow-y: scroll;
+    background:#c4e1f5
+}
+
+dl{
+    
+    width:80%;
+    text-align: center;
+}
+
+/*Important!*/
+.wrapping li{
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content h2{
+    text-align: center;
+    background-color: #ffe0d7;
+    color: #b95757;
+}
+
+.pic1:hover{
+    opacity: 0.75;
+}
+
+.third{
+    text-align: center;
+}
+
+.fab{
+    margin: 3%;
+}
+
+.pink{
+    color: #ffe0d7;
+}
+
+.red{
+    color: #b95757;
+}
+
+footer{
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/*パソコン*/
+@media screen and (min-width: 1025px){
+    h2{
+        font-size: 40px;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    
+    a{
+        font-size: 25px;
+    }
+    
+    nav a{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .intro{
+        text-align: center;
+        background: #ffe0d7;
+        margin: 10px 50px;
+    }
+    
+    .top-icon{
+        width: 40%;
+        height: 40%;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .container{
+        margin-top: 50px;
+    }
+    
+    #newsevent{
+        margin: 60px 200px 0px;
+    }
+    
+    dl{
+        padding: 10px;
+        width: 800px;
+    }   
+
+    dt{
+        color: #b95757;
+        font-weight: bold;
+        padding: 0 10px 0 0;
+        width: 200px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    dd{
+        color: #302B27;
+        padding: 0 10px 0 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    dl::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .content h2{
+        padding: 30px;
+    }
+    
+    .event1{
+        width: 60%;
+        height: 60%;
+        text-align: center;
+    }
+    
+    .pic1{
+        margin-top: 30px;
+        margin: 20px auto;
+        margin-top: 30px;
+    }
+    
+    .coming{
+        margin: 0 auto;
+        border: 2px solid #302B27;
+    }
+    
+    .third .box{
+        margin: 4% 20%;
+    }
+    
+}
+
+/*Laptop*/
+@media screen  and (min-width: 769px) and (max-width: 1024px){
+    h2{
+        font-size: 40px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    
+    a{
+        font-size: 20px;
+    }
+    
+    nav a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    
+    .intro{
+        text-align: center;
+        background: #ffe0d7;
+        margin: 10px 50px;
+    }
+    
+    .top-icon{
+        width: 60%;
+        height: 60%;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .container{
+        margin-top: 50px;
+    }
+    
+    #newsevent{
+        margin: 60px 150px 0px;
+        padding: 0 0 0 20px;
+    }
+    
+    dl{
+        padding: 10px;
+        width: 800px;
+    }   
+
+    dt{
+        color: #b95757;
+        font-weight: bold;
+        padding: 0 10px 0 0;
+        width: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    dd{
+        color: #302B27;
+        padding: 5px 10px 0 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    dl::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .content h2{
+        padding: 20px;
+    }
+        
+    .third .box{
+        margin: 4% 20%;
+    }
+}
+
+/*タブレット*/
+@media screen  and (min-width: 481px) and (max-width: 768px){
+    h2{
+        font-size: 35px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+    
+    a{
+        font-size: 20px;
+    }
+    
+    nav a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    nav ul{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .intro{
+        text-align: center;
+        background: #ffe0d7;
+        margin: 10px 50px;
+    }
+    
+    .top-icon{
+        width: 60%;
+        height: 60%;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .container{
+        margin-top: 50px;
+    }
+    
+    #newsevent{
+        margin: 60px 30px 0px;
+        padding: 0 0 0 20px;
+    }
+    
+    dl{
+        padding: 10px;
+        width: 800px;
+    }   
+
+    dt{
+        color: #b95757;
+        font-weight: bold;
+        padding: 0 10px 0 0;
+        width: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    dd{
+        color: #302B27;
+        padding: 5px 10px 0 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    dl::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .content h2{
+        padding: 15px;
+    }
+    
+    .third .box{
+        margin: 4% 15%;
+    }
+}
+
+/*スマホ*/
+@media screen  and (min-width: 1px) and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+    
+    nav a{
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    nav ul{
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+    
+    main{
+        padding-top: 40px;
+    }   
+    
+    .intro{
+        text-align: center;
+        background: #ffe0d7;
+        margin: 10px 50px;
+    }
+    
+    .top-icon{
+        width: 60%;
+        height: 60%;
+    }
+
+    .content{
+        margin-top: 8%;
+    }
+    
+    .container{
+        margin-top: 50px;
+    }
+    
+    #newsevent{
+        margin: 30px 30px 0px;
+        padding: 0;
+        height: 250px;
+    }
+    
+    dl{
+        padding: 5px;
+        width: 800px;
+    }   
+
+    dt{
+        color: #b95757;
+        font-weight: bold;
+        padding: 0 5px 0 0;
+        width: 100px;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    
+    .margin{
+        padding: 0 5px 25.5px 0;
+    }
+
+    dd{
+        color: #302B27;
+        padding: 5px 10px 0 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 10px;
+        text-align: left; 
+    }
+    
+    
+    dl::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .content h2{
+        padding: 8px;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .third .box{
+        margin: 4% 15%;
+    }
+    
+}
